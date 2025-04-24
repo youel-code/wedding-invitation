@@ -1,10 +1,21 @@
-@import url('https://fonts.cdnfonts.com/css/santa-catarina');
-@import url('https://fonts.googleapis.com/css?family=Istok Web');
+/* @import url('https://fonts.cdnfonts.com/css/santa-catarina'); */
+/* @import url('https://fonts.googleapis.com/css?family=Istok Web'); */
+
+
+@font-face {
+    font-family: 'Santa Catarina';
+    src: url("../fonts/Santa\ Catarina.ttf");
+}
+
+@font-face {
+    font-family: 'Istok Web';
+    src: url("../fonts/IstokWeb-Regular.ttf");
+}
 
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Istok Web';
+    font-family: 'Istok Web', sans-serif;
 }
 
 
