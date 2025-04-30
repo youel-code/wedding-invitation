@@ -20,15 +20,22 @@
 
 
 :root {
-    --bg-color: #9AAAB0;
-    --ticket-color: #F7F0E8;
-    --accents-color: #E9AEAE;
-    --text-color: #652525;
+    --bg-color: #82908A;
+    --ticket-color: #F5F5DC;
+    --accents-color: #B7B783;
+    --text-color: #A86425;
     --text-light-color: var(--ticket-color);
 }
 
 a:link, a:visited, a:hover, a:focus, a:active {
     color: var(--text-color); /* В указанных состояниях гиперссылка будет представлена этим цветом */
+    text-decoration: none; /* И мы исключим подчеркивание */
+    background-color: none;
+    cursor: pointer;
+  }
+
+.button:link, .button:visited, .button:hover, .button:focus, .button:active {
+    color: var(--text-light-color); /* В указанных состояниях гиперссылка будет представлена этим цветом */
     text-decoration: none; /* И мы исключим подчеркивание */
     background-color: none;
     cursor: pointer;
@@ -49,6 +56,8 @@ body{
 .simple-block{
     width: 352px;
     /* height: 400px; */
+
+    color:var(--text-light-color);
     
     display: flex;
     flex-direction: column;
