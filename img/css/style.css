@@ -1,0 +1,257 @@
+/* @import url('https://fonts.cdnfonts.com/css/santa-catarina'); */
+/* @import url('https://fonts.googleapis.com/css?family=Istok Web'); */
+
+
+@font-face {
+    font-family: 'Santa Catarina';
+    src: url("../fonts/Santa\ Catarina.ttf");
+}
+
+@font-face {
+    font-family: 'Istok Web';
+    src: url("../fonts/IstokWeb-Regular.ttf");
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Istok Web', sans-serif;
+}
+
+
+:root {
+    --bg-color: #82908A;
+    --ticket-color: #F5F5DC;
+    --accents-color: #B7B783;
+    --text-color: #A86425;
+    --text-light-color: var(--ticket-color);
+}
+
+a:link, a:visited, a:hover, a:focus, a:active {
+    color: var(--text-color); /* В указанных состояниях гиперссылка будет представлена этим цветом */
+    text-decoration: none; /* И мы исключим подчеркивание */
+    background-color: none;
+    cursor: pointer;
+  }
+
+.button:link, .button:visited, .button:hover, .button:focus, .button:active {
+    color: var(--text-light-color); /* В указанных состояниях гиперссылка будет представлена этим цветом */
+    text-decoration: none; /* И мы исключим подчеркивание */
+    background-color: none;
+    cursor: pointer;
+  }
+
+body{
+    background-color: var(--bg-color);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+
+    overflow: auto;
+
+}
+
+.simple-block{
+    width: 352px;
+    /* height: 400px; */
+
+    color:var(--text-light-color);
+    
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    align-items: center;
+
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+    position: relative;
+    top: 200px;
+    margin-bottom: 200px;
+}
+
+.ticket, .ticket.inversion{
+    width: 352px;
+    height: 726px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background-image: url('../img/ticket.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    margin-top: 4px;
+    margin-bottom: 4px;
+
+    position: static;
+
+    /* border: 1px solid red; */
+}
+
+.ticket.inversion{
+    transform: rotate(180deg);
+}
+
+.ticket .ticket-big-part-block{
+    width: 320px;
+    height: 435px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: -40px;
+
+}
+
+.ticket .ticket-small-part-block{
+    width: 320px;
+    height: 130px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    /* border: solid 2px green; */
+}
+
+.ticket.inversion .ticket-big-part-block{
+    transform: rotate(180deg);
+}
+
+.ticket.inversion .ticket-small-part-block{
+    transform: rotate(180deg);
+}
+
+
+.perforation-line{
+    width: 100%;
+    height: 4px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.and-sign{
+    width: 124px;
+    height: 120px;
+    /* background-image: url('../img/&.svg'); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    left: -15px;
+}
+
+.icon-location svg{
+    fill: var(--accents-color)
+}
+
+.icon-tg svg{
+    fill: var(--accents-color);
+}
+
+.icon-tg:active{
+    position: relative;
+    top: 3px;
+}
+
+.and-sign svg{
+    fill: var(--accents-color);
+}
+
+.button{
+    width: 206px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 0 15px 0;
+    background-color: var(--accents-color);
+    border: 1px solid --text-color;
+    border-radius: 15px;
+
+    cursor: pointer;
+}
+
+.button:active{
+    position: relative;
+    top: 3px;
+}
+
+.ticket .big-header , 
+.ticket .header, 
+.ticket .small-header{
+    font-family: 'Santa Catarina', sans-serif;
+    font-size: 80px;
+    width: 100%;
+    letter-spacing: 5px;
+    display: flex;
+    justify-content: center;
+}
+
+.ticket .header, 
+.ticket .small-header{
+    font-size: 40px;
+    margin-top: 20px;
+    letter-spacing: 3%;
+    text-align: center;
+    font-weight: 800;
+}
+
+.ticket .small-header{
+    letter-spacing: 1px;
+    font-size: 35px;
+    margin-top: 5px;
+}
+
+
+.ticket .supose-names{
+    width: 193px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.ticket .contacts-block{
+    width: 100%;
+    display: flex;
+    flex-direction: row !important;
+    justify-content: space-around;
+}
+
+p {
+    font-family: 'Istok Web';
+    font-size: 14px;
+    text-align: center;
+}
+
+
+.ticket-big-part-block .bg{
+    width: 100%;
+    height: 100%;
+    background-color: var(--accents-color);
+    border-radius: 20px;
+
+}
+
+.location-img{
+    background-image: url('../img/location.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.animation{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+
+
+    margin: -30px 0 0 -5px;
+    /* margin-left: -55px; */
+    z-index: 100;
+    /* border: solid 4px red; */
+}
