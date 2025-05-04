@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'Santa Catarina';
-    src: url("../fonts/Santa\ Catarina.ttf");
+    src: url("../fonts/Santa Catarina.ttf");
 }
 
 @font-face {
@@ -254,4 +254,89 @@ p {
     /* margin-left: -55px; */
     z-index: 100;
     /* border: solid 4px red; */
+}
+
+.program-block{
+    width: 100%;
+    height: 50%;
+    /* margin: 20px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    font-family: 'Santa Catarina', sans-serif;
+}
+
+
+.program-block .program-block-part{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+    margin-top: 20px;
+}
+
+.program-block-part .time{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    width: 30%;
+
+    margin-left: 20px;
+    /* justify-content: center; */
+}
+
+.program-block-part .hours{
+    font-size: 40px;
+    height: 100%;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.program-block-part .minutes{
+    height: 100%;
+    font-size: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    margin-top: 5px;
+
+}
+
+.program-block-part .space-filling{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    text-align: center;
+    width: 40%;
+
+}
+
+.program-block-part .infinity{
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.program-block-part .infinity svg{
+    fill: var(--text-color);
+}
+
+.program-block-part .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+
+    margin-right: 20px;
+
 }
