@@ -104,7 +104,7 @@ body{
     justify-content: center;
     align-items: center;
 
-    margin-bottom: -40px;
+    margin-bottom: -60px;
 
 }
 
@@ -129,10 +129,15 @@ body{
 
 
 .perforation-line{
-    width: 100%;
-    height: 4px;
-    margin-top: 30px;
+    margin-top: 50px;
     margin-bottom: 10px;
+    /* width: 100%;
+    height: 4px;
+    */
+}
+
+.perforation-line svg{
+    stroke: var(--text-color);
 }
 
 .and-sign{
@@ -151,6 +156,12 @@ body{
 
 .icon-tg svg{
     fill: var(--accents-color);
+}
+
+.icon-tg{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .icon-tg:active{
@@ -189,6 +200,10 @@ body{
     letter-spacing: 5px;
     display: flex;
     justify-content: center;
+}
+
+.ticket .big-header.wedding{
+    margin-top: 60px;
 }
 
 .ticket .header, 
@@ -268,6 +283,14 @@ p {
     font-family: 'Santa Catarina', sans-serif;
 }
 
+.bg-light-text{
+    color: var(--text-light-color);
+}
+
+.program-block-part .infinity svg{
+    fill: var(--text-light-color);
+}
+
 
 .program-block .program-block-part{
     width: 100%;
@@ -327,9 +350,6 @@ p {
     justify-content: flex-end;
 }
 
-.program-block-part .infinity svg{
-    fill: var(--text-color);
-}
 
 .program-block-part .text{
     display: flex;
