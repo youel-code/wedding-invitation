@@ -72,6 +72,7 @@ body{
     margin-bottom: 200px;
 }
 
+
 .ticket, .ticket.inversion{
     width: 352px;
     height: 726px;
@@ -90,6 +91,10 @@ body{
     position: static;
 
     /* border: 1px solid red; */
+}
+
+.ticket-with-bg{
+    background-image: url('../img/ticket_with_bg.png');
 }
 
 .ticket.inversion{
@@ -259,10 +264,12 @@ p {
 
 .animation{
     position: relative;
+    top: 40px;
+    left: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 340px;
+    width: 320px;
 
 
     margin: -30px 0 0 -5px;
