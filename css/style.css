@@ -287,7 +287,7 @@ p {
     justify-content: space-evenly;
     align-items: center;
 
-    font-family: 'Santa Catarina', sans-serif;
+    font-family: 'Santa Catarina' !important;
 }
 
 .bg-light-text{
@@ -306,6 +306,7 @@ p {
     justify-content: left;
 
     margin-top: 20px;
+    font-family: 'Santa Catarina';
 }
 
 .program-block-part .time{
@@ -321,6 +322,8 @@ p {
 .program-block-part .hours{
     font-size: 40px;
     height: 100%;
+    font-family: 'Santa Catarina', sans-serif;
+    
 
 
     display: flex;
@@ -335,6 +338,7 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    font-family: 'Santa Catarina', sans-serif;
 
     margin-top: 5px;
 
@@ -345,7 +349,7 @@ p {
     flex-direction: column;
     justify-content: flex-end;
     text-align: center;
-    width: 40%;
+    width: 50%;
 
 }
 
@@ -358,12 +362,15 @@ p {
 }
 
 
-.program-block-part .text{
+.ticket .text{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30%;
+    align-items: left;
+    width: 40%;
+    font-size: 1em;
 
     margin-right: 20px;
+    /* font-family: 'Santa Catarina', sans-serif; */
 
 }
